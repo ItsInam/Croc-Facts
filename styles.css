@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: gold;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+
+.fact-display {
+    font-size: 24px;
+    margin: 20px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path_to_your_crocodile_background_image.png'); /* Add your crocodile background image */
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 0;
+}
